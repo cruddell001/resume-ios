@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedDetail: Details = .WORK_EXPERIENCE
+    @State var showDetail: Bool = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            ZStack {
+                NavigationLink(destination: DetailView(detail: selectedDetail) {
+                    showDetail = false
+                }.navigationBarHidden(true)
+                               , isActive: $showDetail) {
+                    EmptyView()
+                }.hidden()
+                HomeView() { detail in
+                    selectedDetail = detail
+                    showDetail = true
+                }.navigationBarHidden(true)
+            }
+        }
     }
 }
 
