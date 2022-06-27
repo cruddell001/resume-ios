@@ -16,6 +16,15 @@
 		8311B04C28695A5E00AC64B7 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B04B28695A5E00AC64B7 /* Details.swift */; };
 		8311B04F28695AB000AC64B7 /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B04E28695AB000AC64B7 /* ModelExtensions.swift */; };
 		8311B05128695ACB00AC64B7 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B05028695ACB00AC64B7 /* ColorExtensions.swift */; };
+		8311B0532869DCAB00AC64B7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B0522869DCAB00AC64B7 /* DetailView.swift */; };
+		8311B0552869DCE200AC64B7 /* WorkExperienceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B0542869DCE200AC64B7 /* WorkExperienceContent.swift */; };
+		8311B0572869DD0B00AC64B7 /* WorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B0562869DD0B00AC64B7 /* WorkExperience.swift */; };
+		8311B0592869DD9D00AC64B7 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B0582869DD9D00AC64B7 /* Skills.swift */; };
+		8311B05B2869DDCD00AC64B7 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B05A2869DDCD00AC64B7 /* Education.swift */; };
+		8311B05D2869DE0B00AC64B7 /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B05C2869DE0B00AC64B7 /* Resume.swift */; };
+		8311B05F2869FAD400AC64B7 /* EducationContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B05E2869FAD400AC64B7 /* EducationContent.swift */; };
+		8311B0612869FF6D00AC64B7 /* SkillsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B0602869FF6D00AC64B7 /* SkillsContent.swift */; };
+		8311B064286A029D00AC64B7 /* AboutContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B063286A029D00AC64B7 /* AboutContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +38,15 @@
 		8311B04B28695A5E00AC64B7 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		8311B04E28695AB000AC64B7 /* ModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
 		8311B05028695ACB00AC64B7 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		8311B0522869DCAB00AC64B7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8311B0542869DCE200AC64B7 /* WorkExperienceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceContent.swift; sourceTree = "<group>"; };
+		8311B0562869DD0B00AC64B7 /* WorkExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
+		8311B0582869DD9D00AC64B7 /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		8311B05A2869DDCD00AC64B7 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
+		8311B05C2869DE0B00AC64B7 /* Resume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resume.swift; sourceTree = "<group>"; };
+		8311B05E2869FAD400AC64B7 /* EducationContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationContent.swift; sourceTree = "<group>"; };
+		8311B0602869FF6D00AC64B7 /* SkillsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsContent.swift; sourceTree = "<group>"; };
+		8311B063286A029D00AC64B7 /* AboutContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,11 @@
 		8311B045286952E100AC64B7 /* detail */ = {
 			isa = PBXGroup;
 			children = (
+				8311B0522869DCAB00AC64B7 /* DetailView.swift */,
+				8311B0542869DCE200AC64B7 /* WorkExperienceContent.swift */,
+				8311B05E2869FAD400AC64B7 /* EducationContent.swift */,
+				8311B0602869FF6D00AC64B7 /* SkillsContent.swift */,
+				8311B063286A029D00AC64B7 /* AboutContent.swift */,
 			);
 			path = detail;
 			sourceTree = "<group>";
@@ -109,6 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				8311B04B28695A5E00AC64B7 /* Details.swift */,
+				8311B0562869DD0B00AC64B7 /* WorkExperience.swift */,
+				8311B0582869DD9D00AC64B7 /* Skills.swift */,
+				8311B05A2869DDCD00AC64B7 /* Education.swift */,
+				8311B05C2869DE0B00AC64B7 /* Resume.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -193,11 +220,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8311B04A286958F600AC64B7 /* TopContentView.swift in Sources */,
+				8311B0532869DCAB00AC64B7 /* DetailView.swift in Sources */,
+				8311B05B2869DDCD00AC64B7 /* Education.swift in Sources */,
+				8311B064286A029D00AC64B7 /* AboutContent.swift in Sources */,
 				8311B04F28695AB000AC64B7 /* ModelExtensions.swift in Sources */,
 				8311B04C28695A5E00AC64B7 /* Details.swift in Sources */,
+				8311B0552869DCE200AC64B7 /* WorkExperienceContent.swift in Sources */,
 				8311B048286952FF00AC64B7 /* HomeView.swift in Sources */,
+				8311B0572869DD0B00AC64B7 /* WorkExperience.swift in Sources */,
+				8311B05D2869DE0B00AC64B7 /* Resume.swift in Sources */,
+				8311B0592869DD9D00AC64B7 /* Skills.swift in Sources */,
+				8311B0612869FF6D00AC64B7 /* SkillsContent.swift in Sources */,
 				8311B037286952A800AC64B7 /* ContentView.swift in Sources */,
 				8311B035286952A800AC64B7 /* MyResumeApp.swift in Sources */,
+				8311B05F2869FAD400AC64B7 /* EducationContent.swift in Sources */,
 				8311B05128695ACB00AC64B7 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
