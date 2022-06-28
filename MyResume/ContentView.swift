@@ -25,7 +25,10 @@ struct ContentView: View {
                     showDetail = true
                 }).navigationBarHidden(true)
             }
-        }.task {
+            .background(Color.black)
+        }
+        .navigationViewStyle(.stack)
+        .task {
             ContentRepository.shared.loadData()
         }
     }

@@ -54,7 +54,7 @@ struct HomeView: View {
                     TopContentView(geo) { detail in
                         onClick(detail)
                     }
-                }.offset(y: menuShown ? 0.0 : 600.0 )
+                }.offset(y: menuShown ? 0.0 : (geo.size.width * 2 + 50.0) )
                     .animation(.easeInOut, value: menuShown)
             }
             

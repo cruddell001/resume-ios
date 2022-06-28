@@ -61,7 +61,7 @@ struct ThirdPartyLicenseView: View {
 struct AppDevelopmentView: View {
     var body: some View {
         VStack {
-            Text("This app was developed by Chris Ruddell from scratch using Android Studio. It incorporates elements from Material Design, Jetpack Compose and Android Architecture Components. Data is loaded at runtime and updated dynamically from an AWS server instance using Ktor.").padding()
+            Text("This app was developed by Chris Ruddell from scratch using Xcode and SwiftUI. It incorporates elements from Material Design and Apple User Interface Guidelines. Data is loaded at runtime and updated dynamically from an AWS server instance using async/await.").padding()
         }.background(.white).padding()
     }
 }
