@@ -26,7 +26,7 @@ struct ContentView: View {
                 }).navigationBarHidden(true)
             }
         }.task {
-            LocalImporter.shared.importData()
+            ContentRepository.shared.loadData()
         }
     }
 }

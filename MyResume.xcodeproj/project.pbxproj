@@ -29,6 +29,7 @@
 		8311B06A286A79C900AC64B7 /* LocalImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B069286A79C900AC64B7 /* LocalImporter.swift */; };
 		8311B06C286A8C2F00AC64B7 /* FileExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B06B286A8C2F00AC64B7 /* FileExtensions.swift */; };
 		8311B06F286A8D0900AC64B7 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B06E286A8D0900AC64B7 /* ContentRepository.swift */; };
+		8311B071286B243400AC64B7 /* ApiImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311B070286B243400AC64B7 /* ApiImporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		8311B069286A79C900AC64B7 /* LocalImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImporter.swift; sourceTree = "<group>"; };
 		8311B06B286A8C2F00AC64B7 /* FileExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileExtensions.swift; sourceTree = "<group>"; };
 		8311B06E286A8D0900AC64B7 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
+		8311B070286B243400AC64B7 /* ApiImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiImporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				8311B069286A79C900AC64B7 /* LocalImporter.swift */,
+				8311B070286B243400AC64B7 /* ApiImporter.swift */,
 			);
 			path = datasource;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				8311B0532869DCAB00AC64B7 /* DetailView.swift in Sources */,
 				8311B05B2869DDCD00AC64B7 /* Education.swift in Sources */,
 				8311B064286A029D00AC64B7 /* AboutContent.swift in Sources */,
+				8311B071286B243400AC64B7 /* ApiImporter.swift in Sources */,
 				8311B04F28695AB000AC64B7 /* ModelExtensions.swift in Sources */,
 				8311B04C28695A5E00AC64B7 /* Details.swift in Sources */,
 				8311B0552869DCE200AC64B7 /* WorkExperienceContent.swift in Sources */,
