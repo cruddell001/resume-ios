@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var selectedDetail: Details = .WORK_EXPERIENCE
     @State var showDetail: Bool = false
+    @State var automaticMenuShown = false
     var body: some View {
         NavigationView {
             ZStack {
@@ -19,11 +20,13 @@ struct ContentView: View {
                                , isActive: $showDetail) {
                     EmptyView()
                 }.hidden()
-                HomeView() { detail in
+                HomeView(automaticMenuDisplayAllowed: !automaticMenuShown, onMenuDisplayed: { automaticMenuShown = true }, onClick: { detail in
                     selectedDetail = detail
                     showDetail = true
-                }.navigationBarHidden(true)
+                }).navigationBarHidden(true)
             }
+        }.task {
+            LocalImporter.shared.importData()
         }
     }
 }

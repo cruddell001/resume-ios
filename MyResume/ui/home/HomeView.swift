@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    let automaticMenuDisplayAllowed: Bool
+    let onMenuDisplayed: () -> Void
     let onClick: (Details) -> Void
     
     @State private var menuShown = false
@@ -60,7 +62,9 @@ struct HomeView: View {
                 .clipped()
                 .statusBar(hidden: true)
         }.task {
-            showChoicesAfterDelay()
+            if (automaticMenuDisplayAllowed) {
+                showChoicesAfterDelay()
+            }
         }
         
     }
@@ -68,9 +72,10 @@ struct HomeView: View {
     private func showChoicesAfterDelay() {
             // Delay of 1.5 seconds
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                    menuShown = true
-                }
+            menuShown = true
+            onMenuDisplayed()
         }
+    }
 }
 
 
@@ -78,7 +83,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView() { _ in
-        }
+        HomeView(automaticMenuDisplayAllowed: true, onMenuDisplayed: {}, onClick: {_ in })
     }
 }

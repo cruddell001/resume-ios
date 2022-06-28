@@ -44,16 +44,18 @@ private struct WorkItemView: View {
                         Text(item.companyName ?? "")
                             .foregroundColor(.black)
                             .fontWeight(.medium)
-                            .font(.system(size: 18))
+                            .font(.system(size: 16))
+                            .padding(.top, 4)
                         Spacer()
                     }
-                    Text("")
                     HStack {
                         Text(item.position)
                             .foregroundColor(.black)
                             .italic()
-                            .padding(.leading, 8)
-                            .font(.system(size: 16))
+                            .padding(.leading, 4)
+                            .padding(.bottom, 4)
+                            .padding(.top, 4)
+                            .font(.system(size: 14))
                         Spacer()
                     }
                 }.padding(.leading, 8)
@@ -61,6 +63,8 @@ private struct WorkItemView: View {
                 Text(item.dates ?? "")
                     .multilineTextAlignment(.center)
                     .padding(.trailing, 8)
+                    .padding(.top, 4)
+                    .padding(.bottom, 4)
             }
             if (expanded) {
                 HStack {
@@ -71,11 +75,13 @@ private struct WorkItemView: View {
             }
         }
         .background(.white)
-        .cornerRadius(8.0)
+        .cornerRadius(4.0)
         .fixedSize(horizontal: false, vertical: true)
         .animation(.easeInOut, value: expanded)
         .listRowSeparator(.hidden)
         .listRowBackground(Color.clear)
+        .listRowInsets(EdgeInsets(top: 0.0, leading: 00, bottom: 0.0, trailing: 0.0))
+        .padding(4)
         .onTapGesture {
             onClick()
         }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct WorkExperience : Codable {
-    let _id: Int?
+    var _id: Int?
     let position: String
     let companyName: String?
     let dates: String?

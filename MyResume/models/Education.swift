@@ -8,7 +8,7 @@
 import Foundation
 
 struct Education : Codable {
-    let _id: Int?
+    var _id: Int?
     let schoolName: String?
     let degreeName: String?
     let graduationDate: String?

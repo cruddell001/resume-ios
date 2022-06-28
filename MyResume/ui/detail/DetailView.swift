@@ -25,11 +25,11 @@ struct DetailView: View {
             }.padding()
             switch detail {
             case .WORK_EXPERIENCE:
-                WorkExperienceContent(items: [])
+                WorkExperienceContent(items: ContentRepository.shared.getWorkItems())
             case .EDUCATION:
-                EducationContent(items: [])
+                EducationContent(items: ContentRepository.shared.getEducationItems())
             case .SKILLS:
-                SkillsContent(items: [])
+                SkillsContent(items: ContentRepository.shared.getSkillItems())
             case .ABOUT:
                 AboutContent()
             }
