@@ -52,12 +52,11 @@
   "skills":[
     {
       "categoryName":"Languages & Frameworks",
-      "itemNames":["Kotlin", "Java", "Objective-C", "Swift", "Spring Boot", "SQLite", "PHP", "MySQL", "XML", "JSON"]
+      "itemNames":["Kotlin", "Java", "Objective-C", "Swift", "Scala", "SQLite", "PHP", "MySQL", "XML", "JSON"]
     },
     {
       "categoryName":"Software & Libraries",
-      "itemNames":["Android Studio/Intellij", "XCode/AppCode", "Retrofit", "Android Architecture Components",
-        "Crashlytics", "Git", "Maven", "LAMP"]
+      "itemNames":["Android Studio/Intellij", "Jetpack", "Firebase", "XCode/AppCode", "Ktor", "Git", "Maven", "LAMP"]
     },
     {
       "categoryName":"Hardware & Devices",

@@ -89,7 +89,7 @@
 		8311B033286952A800AC64B7 /* MyResume */ = {
 			isa = PBXGroup;
 			children = (
-				8311B06D286A8CFA00AC64B7 /* database */,
+				8311B06D286A8CFA00AC64B7 /* repository */,
 				8311B068286A79B700AC64B7 /* datasource */,
 				8311B065286A798200AC64B7 /* content */,
 				8311B04D28695AA100AC64B7 /* extensions */,
@@ -180,12 +180,12 @@
 			path = datasource;
 			sourceTree = "<group>";
 		};
-		8311B06D286A8CFA00AC64B7 /* database */ = {
+		8311B06D286A8CFA00AC64B7 /* repository */ = {
 			isa = PBXGroup;
 			children = (
 				8311B06E286A8D0900AC64B7 /* ContentRepository.swift */,
 			);
-			path = database;
+			path = repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
