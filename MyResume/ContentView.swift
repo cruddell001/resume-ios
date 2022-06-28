@@ -23,6 +23,7 @@ struct ContentView: View {
                 HomeView(automaticMenuDisplayAllowed: !automaticMenuShown, onMenuDisplayed: { automaticMenuShown = true }, onClick: { detail in
                     selectedDetail = detail
                     showDetail = true
+                    
                 }).navigationBarHidden(true)
             }
             .background(Color.black)
